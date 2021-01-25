@@ -28,45 +28,8 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
-      "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
-      ],
-      "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
-      ],
-      "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
-      ]
-    },
-    {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
-      ],
-      "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
-      ]
     },
     {
       "tag": "funny",
@@ -85,14 +48,15 @@
       "patterns": [
         "Find me sad music",
         "Can you find me sad music",
-        "Sad music please!"
+        "Sad music please!",
+        "I'm sad"
       ],
       "responses": [
         "Here you are: https://www.youtube.com/watch?v=Jllu94-8PxI",
         "This my favorite sad song. Please try it: https://www.youtube.com/watch?v=xh3nGdZa1ZI",
         "Some sad music I know: https://www.youtube.com/watch?v=vohFxJ982Ic",
-        "Sad mood huh! https://www.youtube.com/watch?v=OEZdKA9nffo",
-        "Tear from the heart and not from the mmind: https://www.youtube.com/watch?v=FRlwCIGFFRg"
+        "Sad mood huh: https://www.youtube.com/watch?v=OEZdKA9nffo",
+        "Tear from the heart and not from the mind: https://www.youtube.com/watch?v=FRlwCIGFFRg"
       ]
     },
     {
@@ -100,12 +64,13 @@
       "patterns": [
         "Find me happy music",
         "Can you find me happy music",
-        "Happy music please!"
+        "Happy music please!",
+        "I'm happy today"
       ],
       "responses": [
         "Here you are: https://www.youtube.com/watch?v=BM9qm8ll3OI",
         "Happy day happy mind: https://www.youtube.com/watch?v=ZbZSe6N_BXs",
-        "Some happys music I know: https://www.youtube.com/watch?v=KDJpRgh-tKA",
+        "Some happy music I know: https://www.youtube.com/watch?v=KDJpRgh-tKA",
         "Good mood like yomost ocean: https://www.youtube.com/watch?v=_ZSTaYrTQw0"
       ]
     }
