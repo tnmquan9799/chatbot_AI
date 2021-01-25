@@ -64,11 +64,17 @@ while True:
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 response = random.choice((intent['responses']))
-                message = response.split(": ")
-                print(f"{bot_name}: " + response)
-                mouth.say(message[0])
-                mouth.runAndWait()
-                webbrowser.open_new(message[1])
+                isLink = response.find(":")
+                if isLink != -1:
+                    message = response.split(": ")
+                    print(f"{bot_name}: " + response)
+                    mouth.say(message[0])
+                    mouth.runAndWait()
+                    webbrowser.open_new(message[1])
+                else:
+                    print(f"{bot_name}: " + response)
+                    mouth.say(response)
+                    mouth.runAndWait()
     else:
         print(f"{bot_name}: I do not understand...")
         mouth.say("I do not understand...")
