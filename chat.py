@@ -3,15 +3,15 @@ import json
 import torch
 import speech_recognition
 import pyttsx3
-import time
 import webbrowser
+import time
 
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('intents2.json', 'r') as json_data:
+with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
 FILE = "data.pth"
@@ -45,7 +45,11 @@ while True:
 
     sentence = ear.recognize_google(audio)
     print("You: " + sentence)
-    if sentence == "exit":
+    if "close" in sentence:
+        print(f"{bot_name}: See you again!")
+        mouth.say("See you again!")
+        mouth.runAndWait()
+        time.sleep(2)
         break
 
     sentence = tokenize(sentence)

@@ -1,0 +1,5 @@
+torch=1.7.0
+torchvision
+nltk
+speech_recognition
+pyttsx3

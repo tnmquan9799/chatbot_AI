@@ -1,41 +1,18 @@
-# Implementation of a Contextual Chatbot in PyTorch.  
-Simple chatbot implementation with PyTorch. 
+# Implementation of a Music Chatbot in PyTorch.  
+Simple chatbot implementation with PyTorch.
+This chatbot supports `speech-recognition`
 
-- The implementation should be easy to follow for beginners and provide a basic understanding of chatbots.
-- The implementation is straightforward with a Feed Forward Neural net with 2 hidden layers.
-- Customization for your own use case is super easy. Just modify `intents.json` with possible patterns and responses and re-run the training (see below for more info).
-
-The approach is inspired by this article and ported to PyTorch: [https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077](https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077).
-
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/RpWeNzfSUHw/hqdefault.jpg)](https://www.youtube.com/watch?v=RpWeNzfSUHw&list=PLqnslRFeH2UrFW4AUgn-eY37qOAWQpJyg)
 
 ## Installation
 
 ### Create an environment
-Whatever you prefer (e.g. `conda` or `venv`)
-```console
-mkdir myproject
-$ cd myproject
-$ python3 -m venv venv
-```
+Install `python` 3.6 or above first
 
-### Activate it
-Mac / Linux:
-```console
-. venv/bin/activate
-```
-Windows:
-```console
-venv\Scripts\activate
-```
-### Install PyTorch and dependencies
+### Install libraries listed in `requirements.txt`
 
-For Installation of PyTorch see [official website](https://pytorch.org/).
-
-You also need `nltk`:
+Run:
  ```console
-pip install nltk
+pip install requirements.txt
  ```
 
 If you get an error during the first run, you also need to install `nltk.tokenize.punkt`:
@@ -57,6 +34,8 @@ python chat.py
 ```
 ## Customize
 Have a look at [intents.json](intents.json). You can customize it according to your own use case. Just define a new `tag`, possible `patterns`, and possible `responses` for the chat bot. You have to re-run the training whenever this file is modified.
+
+For music, just say your current mood and the bot will do the rest (only support `sad` and `happy` for now).
 ```console
 {
   "intents": [
